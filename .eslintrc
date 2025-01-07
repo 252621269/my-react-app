@@ -1,0 +1,19 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "plugin:react-hooks/recommended",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["react", "react-hooks", "@typescript-eslint"],
+    "settings": {
+      "react": {
+        "version": "18.3.1"
+      }
+    },
+    "rules": {
+      "react/react-in-jsx-scope": "off", // 如果使用 React 17+ 的 JSX 转换规则
+      "react/prop-types": "off" // 如果使用 TypeScript，可以关闭 prop-types 检查
+    }
+  }
